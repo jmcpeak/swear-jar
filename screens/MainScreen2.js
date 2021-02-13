@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BottomNavigation } from 'react-native-paper';
-import Tabs from 'Screens/Tabs';
+import Tabs from 'screens/Tabs';
 import FeedScreen from './FeedScreen';
 import AlbumScreen from './AlbumScreen';
 import RecentScreen from './RecentScreen';

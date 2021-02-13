@@ -1,5 +1,5 @@
 import React from 'react';
-import Settings from '../Components/Settings';
+import Settings from '../components/settings';
 
 const AlbumRoute = (props) => {
   return <Settings {...props} />;

@@ -6,26 +6,26 @@ import CustomIcon from './CustomIcon';
 const CardAction = (props) => {
   const { colors } = useTheme();
   return (
-    <React.Fragment>
+    <>
       <CustomIcon
-        name="thumb-up"
-        size={15}
         bcolor={colors.primary}
         color="#fff"
-        rad={20}
+        name="thumb-up"
         pad={4}
+        rad={20}
+        size={15}
       />
       <CustomIcon
-        name="heart"
-        size={15}
         bcolor="red"
         color="#fff"
-        rad={20}
+        name="heart"
         pad={4}
+        rad={20}
+        size={15}
       />
 
       <Text> {props.likes}</Text>
-    </React.Fragment>
+    </>
   );
 };
 

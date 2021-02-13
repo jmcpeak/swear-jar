@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { ScrollView } from 'react-native';
-import CustomCard from '../Components/Card';
-import SearchBar from '../Components/SearchBar';
-import elements from '../CustomProperties/elements';
+import CustomCard from '../components/Card';
+import SearchBar from '../components/SearchBar';
+import elements from '../customProperties/elements';
 
 const MusicRoute = () => {
   return (
