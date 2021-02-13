@@ -1,0 +1,118 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true,
+      "impliedStrict": true,
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "reportUnusedDisableDirectives": true,
+  "plugins": [
+    "jest",
+    "jest-dom",
+    "no-unsanitized",
+    "prettier",
+    "react",
+    "testing-library"
+  ],
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:jest/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:react/recommended",
+    "plugin:sonarjs/recommended",
+    "plugin:testing-library/react",
+    "plugin:testing-library/recommended",
+    "prettier",
+    "prettier/prettier",
+    "prettier/react"
+  ],
+  "rules": {
+    "no-unsanitized/method": "error",
+    "no-unsanitized/property": "error",
+    "import/no-unresolved": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "prefer-destructuring": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-sort-props": "error",
+    "react/no-multi-comp": "off",
+    "no-plusplus": [
+      "error",
+      { "allowForLoopAfterthoughts": true }
+    ],
+    "react/forbid-prop-types": [
+      "error",
+      {
+        "forbid": [
+          "any"
+        ]
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.js",
+          "**/*.stories.js",
+          "**/src/setupTests.js",
+          "**/src/test/**",
+          "**/stories/provider.js",
+          "**/stories/setup.js"
+        ]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "es5"
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js"
+        ]
+      }
+    ],
+    "sonarjs/cognitive-complexity": "off",
+    "sonarjs/no-duplicate-string": "off",
+    "sonarjs/no-small-switch": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js"
+        ],
+        "paths": [
+          "."
+        ]
+      }
+    }
+  },
+  "overrides": [
+    {
+      "files": ["*.stories.js", "*.test.js"],
+      "rules": {}
+    }
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  }
+}
