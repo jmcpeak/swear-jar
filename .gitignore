@@ -11,3 +11,16 @@ web-build/
 
 # macOS
 .DS_Store
+/.idea/libraries/buck_android_support.xml
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/jsLinters/eslint.xml
+/.idea/libraries/gradle_wrapper.xml
+/.idea/libraries/gradle_wrapper1.xml
+/.idea/libraries/lib.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/prettier.xml
+/.idea/codeStyles/Project.xml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/SwearJar.iml
+/.idea/vcs.xml

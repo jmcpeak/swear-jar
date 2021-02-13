@@ -7,7 +7,7 @@ const DEFAULT_TITLE = 'SwearJar';
 const MORE_ICON = Platform.OS === 'ios' ? 'dots-horizontal' : 'dots-vertical';
 
 const TopBar = () => {
-  const [title, setTitle] = useState('');
+  const [title, setTitle] = useState('f');
 
   useEffect(() => {
     const ref = db.ref('/swearJarTitle');
